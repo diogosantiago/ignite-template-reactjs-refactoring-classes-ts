@@ -7,8 +7,12 @@ import ModalAddFood from '../../components/ModalAddFood';
 import ModalEditFood from '../../components/ModalEditFood';
 import { FoodsContainer } from './styles';
 
-interface FoodProps {
+export interface FoodProps {
   id: Number;
+  image: string;
+  name: string;
+  price: number;
+  description: string;
 }
 
 const Dashboard = () => {

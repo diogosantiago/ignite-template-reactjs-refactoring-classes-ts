@@ -2,18 +2,10 @@ import { Key, useEffect, useState } from 'react';
 
 import Header from '../../components/Header';
 import api from '../../services/api';
-import Food from '../../components/Food';
+import Food, { FoodProps } from '../../components/Food';
 import ModalAddFood from '../../components/ModalAddFood';
 import ModalEditFood from '../../components/ModalEditFood';
 import { FoodsContainer } from './styles';
-
-export interface FoodProps {
-  id: Number;
-  image: string;
-  name: string;
-  price: number;
-  description: string;
-}
 
 const Dashboard = () => {
   const [foods, setFoods] = useState<FoodProps[]>([] as FoodProps[])
